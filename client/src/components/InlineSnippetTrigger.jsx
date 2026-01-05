@@ -15,6 +15,13 @@ function InlineSnippetTrigger({ textareaRef, onInsert }) {
     fetchSnippets();
   }, []);
 
+  // Refetch snippets when dropdown is shown
+  useEffect(() => {
+    if (showDropdown) {
+      fetchSnippets();
+    }
+  }, [showDropdown]);
+
   useEffect(() => {
     const textarea = textareaRef.current;
     if (!textarea) return;

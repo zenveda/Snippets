@@ -11,6 +11,7 @@ function SnippetPicker({ onSelect, onClose }) {
   const listRef = useRef(null);
 
   useEffect(() => {
+    // Fetch snippets when component mounts (each time picker opens)
     fetchSnippets();
     inputRef.current?.focus();
   }, []);
