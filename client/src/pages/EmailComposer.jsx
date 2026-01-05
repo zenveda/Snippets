@@ -14,15 +14,23 @@ function EmailComposer() {
 
   useEffect(() => {
     const handleKeyDown = (e) => {
-      // Cmd+Shift+S or Ctrl+Shift+S
-      if ((e.metaKey || e.ctrlKey) && e.shiftKey && e.key === 'S') {
+      // Cmd+Shift+S (Mac) or Ctrl+Shift+S (Windows/Linux)
+      // Use 'code' property which is more reliable than 'key'
+      // Also check 'key' as fallback for better browser compatibility
+      const isCmdOrCtrl = e.metaKey || e.ctrlKey;
+      const isSKey = e.code === 'KeyS' || e.key === 'S' || e.key === 's';
+      
+      if (isCmdOrCtrl && e.shiftKey && isSKey) {
         e.preventDefault();
+        e.stopPropagation();
+        e.stopImmediatePropagation();
         setShowPicker(true);
       }
     };
 
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
+    // Use capture phase to catch the event before browser handlers
+    document.addEventListener('keydown', handleKeyDown, { capture: true });
+    return () => document.removeEventListener('keydown', handleKeyDown, { capture: true });
   }, []);
 
   const handleSnippetSelect = (snippet) => {
