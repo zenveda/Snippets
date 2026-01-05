@@ -1,0 +1,167 @@
+.snippet-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.snippet-list-empty {
+  background: white;
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #666;
+}
+
+.snippet-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+
+.snippet-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.snippet-card-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.snippet-card-title {
+  flex: 1;
+}
+
+.snippet-card-title h3 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+  font-size: 1.25rem;
+}
+
+.snippet-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.status-draft {
+  background: #f0f0f0;
+  color: #666;
+}
+
+.status-published {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.status-deprecated {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+.status-archived {
+  background: #fafafa;
+  color: #9e9e9e;
+}
+
+.scope-personal {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.scope-team {
+  background: #f3e5f5;
+  color: #6a1b9a;
+}
+
+.scope-org {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.badge-category {
+  background: #fff9c4;
+  color: #f57f17;
+}
+
+.badge-shortcut {
+  background: #f0f0ff;
+  color: #667eea;
+  font-family: monospace;
+}
+
+.snippet-card-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.action-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.edit-button:hover {
+  background: #e3f2fd;
+  border-color: #90caf9;
+  color: #1565c0;
+}
+
+.delete-button:hover {
+  background: #ffebee;
+  border-color: #ef9a9a;
+  color: #c62828;
+}
+
+.snippet-card-body {
+  padding: 1.5rem;
+  background: #fafafa;
+}
+
+.snippet-body {
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color: #333;
+  font-family: inherit;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.snippet-card-footer {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.snippet-meta {
+  display: flex;
+  gap: 1rem;
+}
+
+.snippet-owner {
+  font-weight: 500;
+}

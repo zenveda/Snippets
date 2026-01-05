@@ -1,0 +1,219 @@
+.email-composer {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.email-composer-header {
+  background: white;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-left h1 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.user-info {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.header-nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.nav-button:hover {
+  background: #f5f5f5;
+  border-color: #ccc;
+}
+
+.nav-button.active {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+.email-composer-main {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.composer-container {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.composer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.composer-header h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.composer-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.snippet-button {
+  padding: 0.5rem 1rem;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.snippet-button:hover {
+  opacity: 0.9;
+}
+
+.composer-instructions {
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.composer-instructions p {
+  margin-bottom: 0.5rem;
+}
+
+.composer-instructions ul {
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.composer-instructions code {
+  background: #e8e8e8;
+  padding: 0.125rem 0.375rem;
+  border-radius: 3px;
+  font-size: 0.85em;
+}
+
+.composer-instructions kbd {
+  background: #333;
+  color: white;
+  padding: 0.125rem 0.375rem;
+  border-radius: 3px;
+  font-size: 0.85em;
+  font-family: monospace;
+}
+
+.composer-field {
+  margin-bottom: 1.5rem;
+}
+
+.composer-field label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.composer-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.composer-input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.textarea-wrapper {
+  position: relative;
+}
+
+.composer-textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  transition: border-color 0.2s;
+  line-height: 1.5;
+}
+
+.composer-textarea:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.composer-footer {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #eee;
+}
+
+.send-button {
+  padding: 0.75rem 1.5rem;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.send-button:hover {
+  opacity: 0.9;
+}
+
+.clear-button {
+  padding: 0.75rem 1.5rem;
+  background: white;
+  color: #666;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.clear-button:hover {
+  background: #f5f5f5;
+  border-color: #ccc;
+}

@@ -1,0 +1,50 @@
+.inline-snippet-dropdown {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 1000;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.inline-snippet-item {
+  padding: 0.75rem;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.inline-snippet-item:last-child {
+  border-bottom: none;
+}
+
+.inline-snippet-item:hover,
+.inline-snippet-item.selected {
+  background-color: #f5f5f5;
+}
+
+.inline-snippet-item-name {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.inline-snippet-shortcut {
+  font-size: 0.75rem;
+  color: #667eea;
+  background: #f0f0ff;
+  padding: 0.125rem 0.5rem;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+.inline-snippet-item-category {
+  font-size: 0.85rem;
+  color: #666;
+}
